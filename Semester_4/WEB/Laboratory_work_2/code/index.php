@@ -36,5 +36,14 @@ echo "В среднем, у Мэг ушло $days_per_language дня на из�
 $sixty_four = 8 ** 2;
 echo "$sixty_four<br>";
 
+$my_num = 666;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo "Переменная answer = $answer, задание выполнено верно<br>";
+
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
