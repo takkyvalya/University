@@ -27,5 +27,11 @@ $currentMonth = 1089.98;
 $difference = $lastMonth - $currentMonth;
 echo "В этом месяце я потратила на $difference долларов больше чем в предыдущем <br>";
 
+$num_languages = 4;
+$months = 4;
+$days = $months * 16;
+$days_per_language = $days / $num_languages;
+echo "В среднем, у Мэг ушло $days_per_language дня на изучение каждого языка<br>";
+
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
