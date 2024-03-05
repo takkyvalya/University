@@ -129,5 +129,14 @@ foreach ($sumElementsArray as $i) {
 }
 echo "Надо сложить первые $count чисел <br>";
 
+function printStringReturnNumber($inputString)
+{
+    echo $inputString. "<br>";
+    return intval($inputString);
+}
+
+$my_num = printStringReturnNumber("181");
+echo $my_num . "<br>";
+
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
