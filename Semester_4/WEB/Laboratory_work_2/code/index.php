@@ -273,5 +273,11 @@ if(count($arr) == 3){
     echo "Сумма трех элементов массива: " . ($arr[0] + $arr[1] + $arr[2]) . "<br>";
 }
 
+$x = 'x';
+for($i = 0; $i < 20; $i++){
+    echo $x . "<br>";
+    $x .= 'x';
+}
+
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
