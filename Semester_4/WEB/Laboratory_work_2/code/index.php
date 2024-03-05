@@ -279,5 +279,25 @@ for($i = 0; $i < 20; $i++){
     $x .= 'x';
 }
 
+$mas = [12,9,1994];
+echo "Среднее арифметическое элементов массива: " . (array_sum($mas)/count($mas)). "<br>";
+
+echo "Сумму чисел от 1 до 100: " . array_sum(range(1, 100)). "<br>";
+
+$mas = [1, 2, 4, 8, 32];
+$mas = array_map('sqrt', $mas);
+echo $mas[0] . " " . $mas[1] . " " . $mas[2] . " " . $mas[3] . " " . $mas[4] . "<br>";
+
+$Keys = range('a', 'z');
+$Values = range(1, 26);
+$mas = array_combine($Keys, $Values);
+foreach (range('a', 'z') as $item){
+    echo $item. " " . $mas[$item] . "<br>";
+}
+
+$str = '1234567890';
+$sum = array_sum(str_split($str, 2));
+echo $sum. "<br>";
+
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
