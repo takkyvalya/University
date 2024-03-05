@@ -237,5 +237,41 @@ echo "Количесвто элементов в массиве: " . count($arr)
 echo "Последний элемент массива: "  . $arr[count($arr)-1] . "<br>";
 echo "Предпоследний элемент массива: ". $arr[count($arr)-2] . "<br>";
 
+function func1($a, $b){
+    if($a + $b > 10){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function func2($a, $b){
+    if($a == $b){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+$test = 0;
+if ($test == 0) echo "верно<br>";
+
+$age = 181;
+if($age < 10 or $age > 99){
+    echo "Данное число меньше 10 или больше 99<br>";
+} else {
+    $sum = array_sum(str_split($age));
+    if($sum <= 9){
+        echo "Сумма цифр данного числа однозначна<br>";
+    } else {
+        echo "Сумма цифр данного числа двузначна<br>";
+    }
+}
+
+$arr = [1,2,3];
+if(count($arr) == 3){
+    echo "Сумма трех элементов массива: " . ($arr[0] + $arr[1] + $arr[2]) . "<br>";
+}
+
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
