@@ -183,5 +183,59 @@ function digitsAddition($inputNumber)
 }
 echo digitsAddition($number) . "<br>";
 
+$mas = ['x'];
+foreach (range(1, 4) as $i) {
+    $mas[] = $mas[$i-1] . 'x';
+}
+foreach (range(0, 4) as $i) {
+    echo $mas[$i].' ';
+}
+echo "<br>";
+
+function arrayFill($inputString, $inputInt){
+    foreach (range(0, $inputInt) as $i) {
+        $mas[] = $inputString;
+    }
+    return $mas;
+}
+$mas = arrayFill('x',5);
+foreach (range(0, count($mas)-1) as $i) {
+    echo $mas[$i].' ';
+}
+echo "<br>";
+
+$mas = [[1, 2, 3], [4, 5], [6]];
+$sum = 0;
+for($i=0; $i < count($mas); $i++){
+    for($j=0; $j < count($mas[$i]); $j++){
+        $sum += $mas[$i][$j];
+    }
+}
+echo "$sum<br>";
+
+$mas = [];
+$element = 1;
+for($i=0; $i < 3; $i++){
+    for($j=0; $j < 3; $j++){
+        $mas[$i][$j] = $element;
+        $element++;
+    }
+}
+
+$mas = [2,5,3,9];
+$resul = $mas[0]*$mas[1] + $mas[2]*$mas[3];
+echo "2*5 + 3*9 = " . $resul . "<br>";
+
+$user =  ['name' => "Nam", 'surname' => "Kim", 'patronymic' => "Joon"];
+echo $user['surname'] . " " . $user['name'] . " " . $user['patronymic'] . "<br>";
+
+$date =  ['year' => 2024, 'month' => 03, 'day' => 05];
+echo $date['year'] . "-" . $date['month'] . "-" . $date['day'] . "<br>";
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo "Количесвто элементов в массиве: " . count($arr) . "<br>";
+echo "Последний элемент массива: "  . $arr[count($arr)-1] . "<br>";
+echo "Предпоследний элемент массива: ". $arr[count($arr)-2] . "<br>";
+
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
