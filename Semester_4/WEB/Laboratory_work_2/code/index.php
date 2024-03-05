@@ -138,5 +138,50 @@ function printStringReturnNumber($inputString)
 $my_num = printStringReturnNumber("181");
 echo $my_num . "<br>";
 
+function increaseEnthusiasm($inputString)
+{
+    return $inputString . "!";
+}
+echo increaseEnthusiasm("Hello world") . "<br>";
+
+function repeatThreeTimes($inputString)
+{
+    return $inputString . $inputString . $inputString;
+}
+echo repeatThreeTimes("Hello world") . "<br>";
+
+echo increaseEnthusiasm(repeatThreeTimes("Hello world")) . "<br>";
+
+function cut($inputString, $chars_count = 10)
+{
+    return substr($inputString, 0, $chars_count);
+}
+echo cut("Hello world") . "<br>";
+
+function printArrayElements($mas, $index = 0)
+{
+    echo $mas[$index++] . " ";
+    if ($index < count($mas)) {
+        printArrayElements($mas, $index);
+    }
+}
+printArrayElements([1, 2, 3, 4, 5]);
+echo "<br>";
+
+$number = 181;
+function digitsAddition($inputNumber)
+{
+    $sum = 0;
+    foreach (str_split("$inputNumber") as $digit) {
+        $sum += intval($digit);
+    }
+    if ($sum > 9) {
+        return digitsAddition($sum);
+    } else {
+        return $sum;
+    }
+}
+echo digitsAddition($number) . "<br>";
+
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
