@@ -6,7 +6,7 @@
 <body>
 
 <h2>Добавить объявление</h2>
-<form action="add_advertisement.php" method="post">
+<form action="save.php" method="post">
     Email: <input type="text" name="email"><br>
     Категория: <input type="text" name="category"><br>
     Заголовок: <input type="text" name="title"><br>
