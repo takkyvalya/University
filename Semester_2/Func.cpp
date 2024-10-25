@@ -1,9 +1,9 @@
 #include <iostream>
-#include <fstream> // работа с файлами
+#include <fstream> // Г°Г ГЎГ®ГІГ  Г± ГґГ Г©Г«Г Г¬ГЁ
 #include <string>
 
 namespace lab {
-	std::ifstream file("Текст.txt"); // открыли файл для чтения
+	std::ifstream file("Г’ГҐГЄГ±ГІ.txt"); // Г®ГІГЄГ°Г»Г«ГЁ ГґГ Г©Г« Г¤Г«Гї Г·ГІГҐГ­ГЁГї
 
 	int Number(int M[1000]) {
 		std::string p;
