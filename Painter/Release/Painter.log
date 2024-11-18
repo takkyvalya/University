@@ -1,0 +1,13 @@
+﻿  Shapes.cpp
+C:\Users\vtakk\Visual Studio 2022\Painter42\Painter\Shapes.cpp(428,1): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
+  (compiling source file '/Shapes.cpp')
+  
+C:\Users\vtakk\Visual Studio 2022\Painter42\Painter\Shapes.cpp(505,1): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
+  (compiling source file '/Shapes.cpp')
+  
+  Generating code
+  1 of 543 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Painter.vcxproj -> C:\Users\vtakk\Visual Studio 2022\Painter42\Release\Painter.exe
