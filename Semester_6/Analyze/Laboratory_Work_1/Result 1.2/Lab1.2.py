@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 # 1. Загрузка данных
 df = pd.read_csv("c:/Users/vtakk/OneDrive/Рабочий стол/Университет/3 курс/Анализ данных/Лабораторная 1/ML1ext/insurance_miptstats.csv")
-print("🔍 Первые строки таблицы:")
+print("Первые строки таблицы:")
 print(df.head())
 
 # 2. Выбор признаков: bmi -> charges
@@ -21,7 +21,7 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 y_pred_sklearn = model.predict(X_test)
 
-print("\n📌 Scikit-learn коэффициенты:")
+print("\n Scikit-learn коэффициенты:")
 print(f"  Угловой коэффициент (slope): {model.coef_[0]}")
 print(f"  Смещение (intercept): {model.intercept_}")
 
@@ -36,7 +36,7 @@ def least_squares(x, y):
 m_custom, b_custom = least_squares(X_train.flatten(), y_train)
 y_pred_custom = m_custom * X_test.flatten() + b_custom
 
-print("\n📌 Собственный метод МНК:")
+print("\n Собственный метод МНК:")
 print(f"  Угловой коэффициент (slope): {m_custom}")
 print(f"  Смещение (intercept): {b_custom}")
 
@@ -60,5 +60,5 @@ results = pd.DataFrame({
     "y_pred_custom": y_pred_custom
 })
 
-print("\n📊 Таблица результатов (первые 10 строк):")
+print("\n Таблица результатов (первые 10 строк):")
 print(results.head(10))
