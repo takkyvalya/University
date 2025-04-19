@@ -62,3 +62,20 @@ results = pd.DataFrame({
 
 print("\n Таблица результатов (первые 10 строк):")
 print(results.head(10))
+
+from sklearn.metrics import r2_score
+from sklearn.linear_model import LinearRegression 
+from sklearn import metrics
+
+
+print("Result for 1.3")
+
+regressor = LinearRegression() 
+regressor.fit(X_train, y_train)
+y_pred = regressor.predict(X_test)
+
+print("Coefficient of determination: %.2f" % r2_score(y_test, y_pred))
+
+print("MAE %.2f" % metrics.mean_absolute_error(y_test, y_pred))
+
+print("MAPE %.2f" % (100 * (np.abs(y_test - y_pred) / y_test).mean()))
